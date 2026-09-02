@@ -1,9 +1,3 @@
-/*
- *@file:   widget.h
- *@author: 缪庆瑞
- *@date:   2016.9.28
- *@brief:  Widget类的头文件
- */
 #ifndef WIDGET_H
 #define WIDGET_H
 
@@ -11,8 +5,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
-#include "barcodebox.h"
-
+#include <QGroupBox>
 
 class Widget : public QWidget
 {
@@ -33,7 +26,9 @@ private:
     QPushButton *produceCode128Button;//生成code128条形码的按钮
     QPushButton *produceEAN13Button;//生成EAN13条形码的按钮
     QPushButton *savePictureButton;//保存条形码到图片的按钮
-    BarCodeBox *barCodeBox;//显示条形码区域
+    QGroupBox *barCodeBox;//条形码区域
+    QLabel *barCodeLabel;//显示条形码的标签
+
 };
 
 #endif // WIDGET_H

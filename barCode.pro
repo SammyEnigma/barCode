@@ -14,12 +14,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         widget.cpp \
-    barcode.cpp \
-    barcodebox.cpp
+    barcode.cpp
 
 HEADERS  += widget.h \
-    barcode.h \
-    barcodebox.h
+    barcode.h
 
 FORMS    +=
 
